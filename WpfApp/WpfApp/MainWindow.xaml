@@ -1,0 +1,145 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        
+        WindowState="Maximized" WindowStyle="None"
+        
+        Title="MainWindow" Height="1080" Width="1920">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50px"/>
+            <RowDefinition Height="80px"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--注释绘制这个标题栏-->
+        <Grid Name="toolBar" Height="50px" Width="Auto" Background="Black" MouseDown="Window_MouseDown" Margin="0" Grid.Row="0">
+
+            <!--标题文本-->
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+                <TextBlock Text="WPFTOU3D" FontSize="30" Foreground="White" ></TextBlock>
+            </StackPanel>
+
+
+            <!--右侧按钮-->
+            <StackPanel Name="buttons" Grid.ColumnSpan="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <!--最小化-->
+                <Button  Name="btn_min" Width="50px" Height="50px" Padding="2" Margin="5" Background="Transparent" Click="btn_min_Click">
+
+                    <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="30"  Text="&#xE108;" Foreground="White" />
+                </Button>
+                <!--normal/最大化-->
+                <Button Name="btn_normal" Width="50px" Height="50px" Padding="2" Margin="5" Background="Transparent" Click="btn_normal_Click">
+                    <Grid>
+                        <TextBlock Name="toNormalSize" FontSize="30"  FontFamily="Segoe MDL2 Assets" Text="&#xE923;" Foreground="White" />
+                        <TextBlock Name="toMaxSize" Visibility="Hidden" FontSize="30" FontWeight="Bold" FontFamily="Segoe MDL2 Assets" Text="&#xE003;" Foreground="White" />
+                    </Grid>
+                </Button>
+
+                <!--关闭程序-->
+                <Button Name="btn_close" Width="50px" Height="50px" Padding="2" Margin="5" Background="Transparent" Click="btn_close_Click">
+                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE711;" FontSize="30" FontWeight="Bold" Foreground="White" />
+                </Button>
+            </StackPanel>
+
+
+        </Grid>
+
+        <!--主要内容页-->
+
+        <Grid Grid.Row="2" Background="white" Margin="16,16,16,30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="233*"/>
+                <ColumnDefinition Width="118*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <ListView>
+                <ListViewItem Width="500">
+                    <Grid Height="100" Width="500" HorizontalAlignment="Center">
+                        <StackPanel HorizontalAlignment="Left">
+                            <Button Name="btn1" Click="btn1_Click">
+                                <Image Width="100" Height="100" Source="Assets/img/LeftArrow.png"></Image>
+                            </Button>
+                        </StackPanel>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">X方向移动</TextBlock>
+                        <StackPanel HorizontalAlignment="Right">
+                            <Button Name="btn2" Click="btn2_Click">
+                                <Image  Width="100" Height="100" Source="Assets/img/RightArrow.png" RenderTransformOrigin="3.842,0.494"></Image>
+                            </Button>
+                        </StackPanel>
+
+                    </Grid>
+
+
+                </ListViewItem>
+
+
+
+
+                <ListViewItem Width="500">
+                    <Grid Height="100" Width="500" HorizontalAlignment="Center">
+                        <StackPanel HorizontalAlignment="Left">
+                            <Button Name="btn3" Click="btn3_Click">
+                                <Image Width="100" Height="100" Source="Assets/img/LeftArrow.png"></Image>
+                            </Button>
+                        </StackPanel>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Y方向移动</TextBlock>
+                        <StackPanel HorizontalAlignment="Right">
+                            <Button Name="btn4" Click="btn4_Click">
+                                <Image  Width="100" Height="100" Source="Assets/img/RightArrow.png" RenderTransformOrigin="3.842,0.494"></Image>
+                            </Button>
+                        </StackPanel>
+
+                    </Grid>
+
+
+                </ListViewItem>
+
+
+                <ListViewItem Width="500">
+                    <Grid Height="100" Width="500" HorizontalAlignment="Center">
+                        <StackPanel HorizontalAlignment="Left">
+                            <Button Name="btn5" Click="btn5_Click">
+                                <Image Width="100" Height="100" Source="Assets/img/LeftArrow.png"></Image>
+                            </Button>
+                        </StackPanel>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">Z方向移动</TextBlock>
+                        <StackPanel HorizontalAlignment="Right">
+                            <Button Name="btn6" Click="btn6_Click">
+                                <Image  Width="100" Height="100" Source="Assets/img/RightArrow.png" RenderTransformOrigin="3.842,0.494"></Image>
+                            </Button>
+                        </StackPanel>
+
+                    </Grid>
+
+
+                </ListViewItem>
+
+            </ListView>
+
+
+            <!--建立一个winform的容器-->
+            <Grid Background="Azure"  Grid.Column="1" Name="Container" >
+
+                <WindowsFormsHost>
+                    <local:UserControl1 x:Name="unityhost">
+
+                    </local:UserControl1>
+                </WindowsFormsHost>
+
+
+            </Grid>
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>

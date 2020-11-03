@@ -1,0 +1,17 @@
+G:\Work\WPFAndU3D\WpfApp\WpfApp\bin\Debug\WpfApp.exe.config
+G:\Work\WPFAndU3D\WpfApp\WpfApp\bin\Debug\WpfApp.exe
+G:\Work\WPFAndU3D\WpfApp\WpfApp\bin\Debug\WpfApp.pdb
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\MainWindow.g.cs
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\App.g.cs
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp_MarkupCompile.cache
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp_MarkupCompile.lref
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\MainWindow.baml
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp.g.resources
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp.Properties.Resources.resources
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp.csproj.GenerateResource.cache
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp.csproj.CoreCompileInputs.cache
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp.exe
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp.pdb
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp.UserControl1.resources
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\Work\WPFAndU3D\WpfApp\WpfApp\obj\Debug\WpfApp.csprojAssemblyReference.cache
